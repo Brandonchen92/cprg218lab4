@@ -8,32 +8,143 @@
   <link rel="stylesheet" type="text/css" href="/styles/fonts.css">
   <link rel="stylesheet" type="text/css" href="/styles/global.css">
   <link rel="stylesheet" type="text/css" href="styles/lab_four_starter.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic+Coding&display=swap" rel="stylesheet">
+
   <title>Common Website Features</title>
 </head>
 <body>
-  <section class="hero-container">
+  <section class="hero-banner">
     <!-- Remove and add hero banner HTML -->
     <div class="remove-assignment-content">
-      <h1>Hero Banner</h1>
+      <h1>Welcome to The Animal Lovers</h1>
+        <p>Explore the world of nature and wildlife with us.</p>
     </div>
   </section>
-  <section class="container content-container">
+  <section class="content-container">
     <!-- Remove and add content HTML -->
     <div class="remove-assignment-content">
-      <h1>Content</h1>
+     
+        <div class="container">
+            <h2>Discover the Calgary Zoo</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam eget fermentum lectus.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            <img src="styles/assets/pengxiao-xu-vJZe1Z0fT1c-unsplash.jpg" alt="Content Image">
+            <a href="#" class="btn">Learn More</a>
+        </div>
+    </section>
     </div>
   </section>
   <section class="container accordion-container">
     <!-- Remove and add accordion HTML -->
     <div class="remove-assignment-content">
-      <h1>Accordion</h1>
+     
+      <html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Responsive Accordion</title>
+<style>
+  .accordion {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 10px;
+  }
+  
+  .accordion-item {
+    border-bottom: 1px solid #ffffff;
+    margin-bottom: 10px;
+  }
+  
+  .accordion-btn {
+    width: 100%;
+    padding: 15px;
+    text-align: left;
+    background-color: #e09494;
+    border: none;
+    cursor: pointer;
+    font-size: 18px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .accordion-content {
+    padding: 10px 0;
+    display: none;
+  }
+  
+  .accordion-item.active .accordion-content {
+    display: block;
+  }
+</style>
+</head>
+<body>
+
+<div class="accordion">
+  <div class="accordion-item">
+    <button class="accordion-btn">Question 1</button>
+    <div class="accordion-content">
+      <p>Answer 1 Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+    </div>
+  </div>
+  <div class="accordion-item">
+    <button class="accordion-btn">Question 2</button>
+    <div class="accordion-content">
+      <p>Answer 2 Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+    </div>
+  </div>
+  <div class="accordion-item">
+    <button class="accordion-btn">Question 3</button>
+    <div class="accordion-content">
+      <p>Answer 3 Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+    </div>
+  </div>
+</div>
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    const accordionItems = document.querySelectorAll('.accordion-item');
+
+    accordionItems.forEach(function(item) {
+      item.addEventListener('click', function() {
+        this.classList.toggle('active');
+        const content = this.querySelector('.accordion-content');
+        if (content.style.display === 'block') {
+          content.style.display = 'none';
+        } else {
+          content.style.display = 'block';
+        }
+      });
+    });
+  });
+</script>
+
+</body>
+</html>
     </div>
   </section>
   <section class="footer-container">
     <!-- Remove and add footer HTML -->
     <div class="remove-assignment-content">
       <h1>Footer</h1>
+      <div class="footer-content">
+        <div class="footer-links">
+            <ul>
+                <li><a href="#">Terms of Use</a></li>
+                <li><a href="#">Privacy Policy</a></li>
+                <p class="copyright">
+                  &copy; <span id="2024"></span> Wildlife Lovers Company. All rights reserved.
+              </p>
+            </ul>
+        </div>
+        <div id="map" class="map"></div>
     </div>
-  </section>
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2508.437699069421!2d-114.03327788769168!3d51.045005371593895!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x53717bf9b1dcd9e5%3A0xdab221042c5a569a!2sCalgary%20Zoo!5e0!3m2!1sen!2sca!4v1709846513157!5m2!1sen!2sca" width="300" height="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>      </ul>
+      </div>
+  </div>
+    </section>
 </body>
+
 </html>
